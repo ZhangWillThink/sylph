@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "latest",
-    "animate.css": "^4.1.1",
+    "animate.css": "latest",
     "nuxt": "latest",
     "tailwindcss": "latest",
     "vue": "latest",
