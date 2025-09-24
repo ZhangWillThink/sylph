@@ -2,33 +2,58 @@
 
 :root {
   color-scheme: light;
-  --night-sky: oklab(4.314% 0.002 -0.006);
-  --river-glow: oklab(29.5% -0.033 0.003);
-  --neon-orange: oklab(60.5% 0.1 0.2);
-  --limestone: oklab(85.5% 0.002 -0.004);
-  --fog-white: oklab(97.219% -0.00129 -0.00328);
-  --rail-steel: oklab(21.5% 0.001 -0.005);
-  --brick-red: oklab(45.5% 0.1 0.05);
-  --skyline-accent: oklab(70.5% -0.05 -0.1);
-  --haze-gradient: linear-gradient(135deg, rgba(11, 18, 37, 0.92), rgba(68, 199, 255, 0.55));
-  --depth-blur: 24px;
-  --card-radius: 18px;
-  --grid-gap: clamp(1.25rem, 1vw + 1rem, 1.75rem);
-  --hero-clamp: clamp(3rem, 5vw + 1rem, 6rem);
+  --night-sky: #f5f7ff;
+  --river-glow: #00cfff;
+  --neon-orange: #ff6b3d;
+  --limestone: #dae4ff;
+  --fog-white: #ffffff;
+  --rail-steel: #6f7fb6;
+  --brick-red: #ff4d8d;
+  --skyline-accent: #7a5cff;
+  --haze-gradient: linear-gradient(135deg, rgba(0, 207, 255, 0.18), rgba(255, 77, 141, 0.25));
+
+  --depth-blur: drop-shadow(0 20px 40px rgba(16, 26, 56, 0.3));
+  --card-radius: clamp(1rem, 2vw, 1.75rem);
+  --grid-gap: clamp(1rem, 3vw, 2.5rem);
+  --hero-clamp: clamp(3.5rem, 8vw, 9rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --night-sky: oklab(0.196% -0.004 -0.024);
-    --river-glow: oklab(25.5% -0.033 0.003);
-    --neon-orange: oklab(60.5% 0.1 0.2);
-    --limestone: oklab(85.5% 0.002 -0.004);
-    --fog-white: #dfe3ea;
-    --rail-steel: #272b36;
-    --brick-red: #c74444;
-    --skyline-accent: #33b8f4;
-    --haze-gradient: linear-gradient(135deg, rgba(5, 8, 15, 0.95), rgba(51, 184, 244, 0.45));
-    --depth-blur: 28px;
-  }
+.dark {
+  color-scheme: dark;
+  --night-sky: #050212;
+  --river-glow: #00f5ff;
+  --neon-orange: #ff5f1f;
+  --limestone: #1c2545;
+  --fog-white: #d4e9ff;
+  --rail-steel: #10172d;
+  --brick-red: #ff2d75;
+  --skyline-accent: #8b5cf6;
+  --haze-gradient: radial-gradient(
+    circle at 20% 20%,
+    rgba(0, 245, 255, 0.35),
+    rgba(11, 27, 73, 0.85) 55%,
+    rgba(3, 5, 15, 0.95)
+  );
+
+  --depth-blur: drop-shadow(0 35px 60px rgba(0, 0, 0, 0.55));
+  --card-radius: clamp(1rem, 2vw, 1.75rem);
+  --grid-gap: clamp(1rem, 3vw, 2.5rem);
+  --hero-clamp: clamp(3.5rem, 8vw, 9rem);
+}
+
+@theme inline {
+  --color-night-sky: var(--night-sky);
+  --color-river-glow: var(--river-glow);
+  --color-neon-orange: var(--neon-orange);
+  --color-limestone: : var(--limestone: );
+  --color-fog-white: var(--fog-white);
+  --color-rail-steel: var(--rail-steel);
+  --color-brick-red: var(--brick-red);
+  --color-skyline-accent: var(--skyline-accent);
+  --color-haze-gradient: var(--haze-gradient);
+
+  --radius-depth-blur: var(--depth-blur);
+  --radius-card-radius: var(--card-radius);
+  --radius-grid-gap: var(--grid-gap);
+  --radius-hero-clamp: var(--hero-clamp);
 }

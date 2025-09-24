@@ -1,13 +1,13 @@
-import { defineComponent } from "vue";
-import { NuxtLayout, NuxtPage } from "#components";
+import { defineComponent } from 'vue'
+import { NuxtLayout, NuxtPage } from '#components'
 
 export default defineComponent({
-  name: "App",
+  name: 'App',
   setup() {
     return () => (
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
-    );
+    )
   },
-});
+})
