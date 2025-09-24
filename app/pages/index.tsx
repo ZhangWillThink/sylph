@@ -5,8 +5,8 @@ import Header from '~/components/Header'
 const Decoration = () => (
   <>
     <div class="pointer-events-none absolute inset-0 -z-10">
-      <div class="absolute left-8 top-1/2 h-80 w-80 -translate-y-1/2 rounded-full bg-cyan-400/25 blur-3xl shadow-[0_0_120px_40px_rgba(34,211,238,0.15)] motion-safe:animate-pulse" />
-      <div class="absolute right-8 top-1/3 h-80 w-80 -translate-y-1/2 rounded-full bg-rose-400/25 blur-3xl shadow-[0_0_120px_40px_rgba(251,113,133,0.15)] motion-safe:animate-pulse" />
+      <div class="absolute top-1/2 left-8 h-80 w-80 -translate-y-1/2 rounded-full bg-cyan-400/25 shadow-[0_0_120px_40px_rgba(34,211,238,0.15)] blur-3xl motion-safe:animate-pulse" />
+      <div class="absolute top-1/3 right-8 h-80 w-80 -translate-y-1/2 rounded-full bg-rose-400/25 shadow-[0_0_120px_40px_rgba(251,113,133,0.15)] blur-3xl motion-safe:animate-pulse" />
     </div>
   </>
 )
@@ -38,7 +38,7 @@ export default defineComponent({
           <Header />
         </div>
 
-        <section class="relative z-10 mx-auto max-w-6xl px-6 pb-20 pt-28 md:pt-32">
+        <section class="relative z-10 mx-auto max-w-6xl px-6 pt-28 pb-20 md:pt-32">
           <div class="grid items-center gap-10 rounded-4xl bg-white/10 p-6 ring-1 ring-white/15 backdrop-blur-2xl md:grid-cols-2 md:p-10">
             <div class="pointer-events-none absolute -inset-px rounded-[2rem] opacity-70 [mask:linear-gradient(white,transparent)]">
               <div class="absolute inset-0 rounded-[2rem] bg-gradient-to-r from-cyan-400/30 via-fuchsia-400/25 to-rose-400/30 blur-xl" />
