@@ -1,0 +1,22 @@
+{
+  "name": "sylph",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "latest",
+    "nuxt": "latest",
+    "tailwindcss": "latest",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "latest"
+  }
+}
