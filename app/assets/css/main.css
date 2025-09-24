@@ -1,1 +1,34 @@
 @import 'tailwindcss';
+
+:root {
+  color-scheme: light;
+  --night-sky: oklab(4.314% 0.002 -0.006);
+  --river-glow: oklab(29.5% -0.033 0.003);
+  --neon-orange: oklab(60.5% 0.1 0.2);
+  --limestone: oklab(85.5% 0.002 -0.004);
+  --fog-white: oklab(97.219% -0.00129 -0.00328);
+  --rail-steel: oklab(21.5% 0.001 -0.005);
+  --brick-red: oklab(45.5% 0.1 0.05);
+  --skyline-accent: oklab(70.5% -0.05 -0.1);
+  --haze-gradient: linear-gradient(135deg, rgba(11, 18, 37, 0.92), rgba(68, 199, 255, 0.55));
+  --depth-blur: 24px;
+  --card-radius: 18px;
+  --grid-gap: clamp(1.25rem, 1vw + 1rem, 1.75rem);
+  --hero-clamp: clamp(3rem, 5vw + 1rem, 6rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --night-sky: oklab(0.196% -0.004 -0.024);
+    --river-glow: oklab(25.5% -0.033 0.003);
+    --neon-orange: oklab(60.5% 0.1 0.2);
+    --limestone: oklab(85.5% 0.002 -0.004);
+    --fog-white: #dfe3ea;
+    --rail-steel: #272b36;
+    --brick-red: #c74444;
+    --skyline-accent: #33b8f4;
+    --haze-gradient: linear-gradient(135deg, rgba(5, 8, 15, 0.95), rgba(51, 184, 244, 0.45));
+    --depth-blur: 28px;
+  }
+}
