@@ -16,13 +16,21 @@ const Mask = () => (
 )
 
 const Avatar = () => (
-  <div class="relative mx-auto aspect-[3/4] w-64 max-w-full overflow-hidden rounded-4xl shadow-2xl ring-1 ring-white/10">
-    <img
-      src="/images/avatar.png"
-      alt="Hayes avatar"
-      class="h-full w-full -rotate-3 object-cover transition-transform duration-300 will-change-transform hover:-rotate-6"
-    />
-    <div class="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-white/10" />
+  <div class="relative mx-auto w-72 sm:w-80 md:w-96 lg:mx-0 lg:w-[28rem]">
+    {/* neon halo */}
+    <div class="pointer-events-none absolute -inset-3 -z-10 rounded-4xl bg-gradient-to-r from-cyan-400/30 via-fuchsia-300/20 to-rose-400/30 opacity-90 blur-3xl" />
+    <div class="pointer-events-none absolute -inset-6 -z-20 rounded-4xl shadow-[0_0_90px_rgba(99,102,241,0.12)]" />
+
+    <div class="relative overflow-hidden rounded-4xl shadow-2xl ring-1 ring-white/10 transition-transform duration-300 hover:-translate-y-2 hover:scale-105">
+      <img
+        src="/images/avatar.png"
+        alt="Hayes avatar"
+        class="block h-auto w-full -rotate-2 object-cover will-change-transform"
+      />
+
+      {/* subtle inner gloss */}
+      <div class="pointer-events-none absolute inset-0 rounded-4xl bg-gradient-to-t from-black/10 via-transparent to-white/5 mix-blend-overlay" />
+    </div>
   </div>
 )
 
