@@ -16,7 +16,7 @@ const Mask = () => <div class="absolute inset-0 size-full backdrop-blur-3xl" />
 
 const Avatar = () => (
   <img
-    src="/images/avatar.png"
+    src="/images/avatar.jpg"
     class="absolute inset-0 -top-1/3 h-96 -rotate-7 rounded-4xl bg-cover bg-center transition-transform duration-300 hover:-rotate-13"
   />
 )
